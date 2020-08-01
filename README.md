@@ -3,7 +3,7 @@
 ## Instructions For Use
 * Download ngrok into the project root directory: https://ngrok.com/download
 
-* Navigate the the root directory in terminal, run `> ./ngrok http 5000`
+* Navigate the the root directory in terminal, run `./ngrok http 5000`
 
 * Add your telegram bot token to the TOKEN variable in config.py
 
