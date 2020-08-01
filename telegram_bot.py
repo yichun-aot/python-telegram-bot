@@ -45,10 +45,6 @@ class TelegramBot:
             self.outgoing_message_text = "Hello {} {}!".format(self.first_name, self.last_name)
             success = self.send_message()
         
-        if self.incoming_message_text == '/rad':
-            self.outgoing_message_text = '🤙'
-            success = self.send_message()
-        
         return success
 
     """
@@ -67,5 +63,3 @@ class TelegramBot:
     @staticmethod
     def init_webhook(url):
         requests.get(url)
-
-
