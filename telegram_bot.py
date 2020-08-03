@@ -2,7 +2,7 @@ import requests
 import re
 
 from env import TELEGRAM_SEND_MESSAGE_URL, TELEGRAM_SEND_PHOTO_URL
-from gif_meme import fetch_meme_list, generate_meme
+from meme import fetch_meme_list, generate_meme
 
 class TelegramBot:
 
