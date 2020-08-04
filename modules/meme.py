@@ -1,4 +1,4 @@
-# Original conceptS adapted from https://medium.com/daily-python/python-script-to-generate-meme-daily-python-11-e08aee07e940
+# Original concept adapted from https://medium.com/daily-python/python-script-to-generate-meme-daily-python-11-e08aee07e940
 
 import requests
 import urllib
@@ -26,6 +26,8 @@ def generate_meme(incoming_text):
     images = fetch_meme()
 
     id = int(incoming_text.split("_")[1])
+    if id > 100:
+        id = id % 100
     text0 = incoming_text.split("_")[2]
     text1 = incoming_text.split("_")[3]
 

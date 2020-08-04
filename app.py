@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 
-from telegram_bot import TelegramBot
+from modules.telegram_bot import TelegramBot
 from env import TELEGRAM_INIT_WEBHOOK_URL
 
 # Create app object which is our app server
